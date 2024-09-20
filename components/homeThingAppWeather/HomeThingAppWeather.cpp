@@ -27,7 +27,7 @@ void HomeThingAppWeather::display_temperature(int xPos, int yPos,
   // Display temperature icon
   // display_buffer_->drawIcon(10, 10, temperature_icon_data, temperature_icon_width, temperature_icon_height, display_state_->get_color_palette()->get_accent_primary());
   // Draw temperature information
-  auto state = "Temperature: " + to_string(static_cast<int>(temperature)) + temperature_unit;
+  auto state = "Temperature: " + to_string(static_cast<int>(temperature)) + "°F";
   display_state_->drawTextWrapped(
       xPos, yPos, display_state_->get_font_medium(),
       display_state_->get_color_palette()->get_accent_primary(),
